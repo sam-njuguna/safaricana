@@ -1,27 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600;700&family=Jost:wght@400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --crimson: "Crimson Text", serif;
+  --jost: "Jost", sans-serif;
+  /* color: #070707; */
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  * {
+    @apply scroll-smooth outline-none list-none;
+  }
+  body {
+    @apply text-[16px] font-jost font-normal bg-bg text-text_g;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  h1 {
+    @apply text-[6rem] text-text_t font-crimson font-bold leading-[6rem] max-mobile:text-[2rem] max-mobile:leading-[2rem] max-mobile_lg:text-[3rem] max-mobile_lg:leading-[3rem] max-tablet:text-[4rem] max-tablet:leading-[4rem] max-tablet_lg:text-[5rem] max-tablet_lg:leading-[5rem];
+  }
+  h2 {
+    @apply text-[4rem] text-text_t font-crimson font-bold leading-[4rem] max-mobile:text-[1.6rem] max-mobile:leading-[1.6rem] max-mobile_lg:text-[2.2rem] max-mobile_lg:leading-[2.2rem] max-tablet:text-[2.8rem] max-tablet:leading-[2.8rem] max-tablet_lg:text-[3.4rem] max-tablet_lg:leading-[3.4rem];
+  }
+  h3 {
+    @apply text-[2rem] text-text_c font-jost font-bold leading-[2rem] max-mobile:text-[1.2rem] max-mobile:leading-[1.2rem] max-mobile_lg:text-[1.4rem] max-mobile_lg:leading-[1.4rem] max-tablet:text-[1.6rem] max-tablet:leading-[1.6rem] max-tablet_lg:text-[1.8rem] max-tablet_lg:leading-[1.8rem];
+  }
+  p {
+    @apply leading-[1.5] font-jost font-normal;
+  }
+  .fx {
+    @apply flex items-center gap-4;
+  }
+  .fc {
+    @apply uppercase text-[12px] font-bold tracking-[1px];
+  }
+  .btn {
+    @apply py-3 px-12 bg-bg_btn_var duration-200 font-bold  ease-out hover:bg-bg_btn  text-text_c;
+  }
+  .width {
+    @apply max-w-[1200px] m-auto px-10 max-mobile:px-6 max-tablet:px-8 max-laptop:px-12;
+  }
+  /* .all-width {
+    @apply max-w-[2000px] m-auto px-10 max-mobile:px-6 max-tablet:px-8 max-laptop:px-12;
+  } */
 }
