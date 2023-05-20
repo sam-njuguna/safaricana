@@ -1,5 +1,5 @@
 "use client";
-import { mara1, mara2, mara3, mara4 } from "@/assets";
+import { kg1, kg2, kg3, kg4, p4 } from "@/assets";
 import Image from "next/image";
 import { FC } from "react";
 
@@ -10,29 +10,31 @@ const Place5: FC<Place1Props> = ({}) => {
     <div className="flex relative w-full h-[600px] max-mobile:h-full mt-[5rem]">
       <div className="flex w-full items-baseline">
         <div className="w-full relative h-full">
-          <Image src={mara2} alt="Image 1" className=" h-full w-full" />
-          <div className="absolute top-0 bottom-0 right-0 h-full w-full bg-gradient-to-l from-[#070707] via-[#070707c7]"></div>
+          <div className="w-full flex items-end justify-end">
+            <Image src={kg3} alt="Image 1" className=" h-[600px] w-max" />
+          </div>
+          <div className="absolute top-0 bottom-0 right-0 h-full w-full bg-gradient-to-l from-[#070707] via-[#070707c5]"></div>
         </div>
         <div className="w-full"></div>
       </div>
       <div className="absolute w-full top-0 left-0 h-[600px] flex justify-center items-center  max-mobile:h-full ">
         <div className="width flex items-center flex-row-reverse gap-8">
-          <div className="w-full flex h-[400px] gap-4">
+          <div className="w-full flex h-[400px] flex-row-reverse gap-4">
             <Image
-              src={mara1}
+              src={kg1}
               alt="Image 1"
               className="object-contain h-[400px] w-max rounded-[10px]"
             />
             <div className="flex flex-col gap-4">
               <Image
-                src={mara3}
+                src={kg2}
                 alt="Image 1"
-                className="object-contain h-[200px]  w-max rounded-[10px]"
+                className="object-contain h-[160px]  w-max rounded-[10px]"
               />
               <Image
-                src={mara4}
+                src={kg4}
                 alt="Image 1"
-                className="object-contain h-[180px] w-full rounded-[10px]"
+                className="object-contain h-[160px] w-max rounded-[10px]"
               />
             </div>
           </div>

@@ -9,8 +9,10 @@ const Place3: FC<Place1Props> = ({}) => {
     <div className="flex relative w-full h-[600px] max-mobile:h-full mt-[5rem]">
       <div className="flex w-full items-baseline">
         <div className="w-full relative h-full">
-          <Image src={mara2} alt="Image 1" className=" h-full w-full" />
-          <div className="absolute top-0 bottom-0 right-0 h-full w-full bg-gradient-to-l from-[#070707] via-[#070707c7]"></div>
+          <div className="w-full flex items-end justify-end">
+            <Image src={mara2} alt="Image 1" className=" h-[600px] w-max" />
+          </div>
+          <div className="absolute top-0 bottom-0 right-0 h-full w-full bg-gradient-to-l from-[#070707] via-[#070707c5]"></div>
         </div>
         <div className="w-full"></div>
       </div>

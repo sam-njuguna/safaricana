@@ -6,7 +6,6 @@
 :root {
   --crimson: "Crimson Text", serif;
   --jost: "Jost", sans-serif;
-  /* color: #070707; */
 }
 @layer base {
   * {
@@ -41,7 +40,4 @@
   .width {
     @apply max-w-[1200px] m-auto px-10 max-mobile:px-6 max-tablet:px-8 max-laptop:px-12;
   }
-  /* .all-width {
-    @apply max-w-[2000px] m-auto px-10 max-mobile:px-6 max-tablet:px-8 max-laptop:px-12;
-  } */
 }
