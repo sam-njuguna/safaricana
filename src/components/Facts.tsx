@@ -6,7 +6,7 @@ interface FactsProps {}
 
 const Facts: FC<FactsProps> = ({}) => {
   return (
-    <div className="facts">
+    <section className="facts" id="facts">
       <div className="width">
         <div className="w-full justify-center items-center text-center mb-4">
           <h2>Travel Facts </h2>
@@ -69,7 +69,7 @@ const Facts: FC<FactsProps> = ({}) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

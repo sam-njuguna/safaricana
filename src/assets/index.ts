@@ -1,3 +1,4 @@
+import logo from "./logo.png";
 import h1 from "./home/h1.jpeg";
 import h2 from "./home/h2.jpg";
 import h3 from "./home/h3.jpeg";
@@ -35,6 +36,7 @@ import bwindi3 from "./bwindi/bwindi3.jpg";
 import bwindi5 from "./bwindi/bwindi5.jpg";
 
 export {
+  logo,
   h1,
   h2,
   h3,

@@ -1,4 +1,4 @@
-import { Facts, Footer, Home, Places } from "@/components";
+import { Facts, Footer, Home, Navbar, Places } from "@/components";
 import { FC } from "react";
 
 interface pageProps {}
@@ -6,6 +6,7 @@ interface pageProps {}
 const page: FC<pageProps> = ({}) => {
   return (
     <>
+      <Navbar />
       <Home />
       <Places />
       <Facts />
