@@ -46,14 +46,13 @@ const Place2: FC<Place1Props> = ({}) => {
           <div className="w-full flex  -mt-20 max-mobile_lg:mt-0">
             <p>
               Victoria Falls is a massive waterfall on the Zambia-Zimbabwe
-              border. It's the largest curtain of falling water worldwide, with
-              a width of 1,708 meters and a height of 108 meters. The falls'
-              power and beauty captivate visitors, creating a mesmerizing
-              experience. The misty spray forms rainbows and sustains a lush
-              rainforest ecosystem nearby. Thrill-seekers enjoy white-water
-              rafting, bungee jumping, and helicopter tours, while others
-              appreciate the falls' magnificence from viewpoints and walking
-              trails.
+              border. Its the largest curtain of falling water worldwide, with a
+              width of 1708 meters and a height of 108 meters. The falls power
+              and beauty captivate visitors, creating a mesmerizing experience.
+              The misty spray forms rainbows and sustains a lush rainforest
+              ecosystem nearby. Thrill-seekers enjoy white-water rafting, bungee
+              jumping, and helicopter tours, while others appreciate the falls
+              magnificence from viewpoints and walking trails.
             </p>
             <div className="flex"></div>
           </div>
