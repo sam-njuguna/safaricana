@@ -38,35 +38,32 @@ const Facts: FC<FactsProps> = ({}) => {
           <div className="width h-[500px] max-mobile:h-full max-mobile:flex-col gap-4 flex justify-center items-center relative">
             <div className="w-[30%] max-mobile:w-full max-mobile_lg:w-[45%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 bg-bg_btn_var z-20 p-4 rounded-br-[20px] rounded-tl-[20px] text-text_c ">
               <p className="font-medium max-mobile_lg:text-[14px]">
-                Africa is the world's second-largest continent, spanning around
-                30.37 million square kilometers (11.7 million square miles).
+                Africa is the second-largest continent in the world, both in
+                terms of land area and population.
               </p>
             </div>
             <div className="w-[30%] max-mobile:w-full max-mobile_lg:w-[45%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative top-5 max-mobile_lg:top-0 left-0 bg-bg_btn_var z-10 p-4 rounded-br-[20px] rounded-tl-[20px]">
               <p className="max-mobile_lg:text-[14px]">
-                Africa hosts natural wonders like Victoria Falls, the Nile
-                River, Serengeti National Park, and the Sahara Desert.
+                Africa hosts natural wonders eg Victoria Falls, the Nile
+                River,National Park, and the Sahara Desert.
               </p>
             </div>
             <div className="w-[30%] max-mobile:w-full max-mobile_lg:w-[45%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile_lg:top-0 absolute max-mobile:relative top-[7%] right-0 bg-bg_btn_var z-10 p-4 rounded-br-[20px] rounded-tl-[20px]">
               <p className="max-mobile_lg:text-[14px]">
                 Africa boasts diverse cultural heritage, including vibrant
-                traditions, music, dance, art, and cuisine, with each country
-                having unique practices, customs, and festivals.
+                traditions, music, dance, art, and cuisine.
               </p>
             </div>
             <div className="w-[30%] max-mobile:w-full max-mobile_lg:w-[45%] max-mobile_lg:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative bottom-0 left-[10%] bg-bg_btn_var z-10 p-4 rounded-br-[20px] rounded-tl-[20px]">
               <p className="max-mobile_lg:text-[14px]">
-                Africa boasts diverse cultural heritage, vibrant traditions,
-                music, dance, art, and cuisine. Each country holds unique
-                practices, customs, and festivals.
+                Wildlife safaris provide opportunities to see the "Big Five" and
+                other unique species.
               </p>
             </div>
             <div className="w-[30%] max-mobile:w-full max-mobile_lg:w-[45%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative bottom-[10%] max-mobile_lg:bottom-0 right-0 bg-bg_btn_var z-10 p-4 rounded-br-[20px] rounded-tl-[20px]">
               <p className="max-mobile_lg:text-[14px]">
-                Africa features diverse landscapes: deserts like the Sahara, the
-                world's largest hot desert, alongside savannas, rainforests,
-                mountains, and coastlines.
+                Africa features diverse landscapes: deserts eg Sahara, alongside
+                savannas, rainforests, mountains, and coastlines.
               </p>
             </div>
           </div>
