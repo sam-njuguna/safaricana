@@ -56,8 +56,8 @@ const Facts: FC<FactsProps> = ({}) => {
             </div>
             <div className="w-[30%] max-mobile:w-full max-mobile_lg:w-[45%] max-mobile_lg:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative bottom-0 left-[10%] bg-bg_btn_var z-10 p-4 rounded-br-[20px] rounded-tl-[20px]">
               <p className="max-mobile_lg:text-[14px]">
-                Wildlife safaris provide opportunities to see the "Big Five" and
-                other unique species.
+                Wildlife safaris provide opportunities to see the "Big Five"
+                (elephant, lion, leopard, buffalo, and rhinoceros) .
               </p>
             </div>
             <div className="w-[30%] max-mobile:w-full max-mobile_lg:w-[45%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative bottom-[10%] max-mobile_lg:bottom-0 right-0 bg-bg_btn_var z-10 p-4 rounded-br-[20px] rounded-tl-[20px]">
