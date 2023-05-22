@@ -22,7 +22,7 @@ const Place4: FC<Place1Props> = ({}) => {
           <h3>Pyramids of Giza.</h3>
         </div>
         <div className="width flex items-center max-mobile_lg:flex-col  gap-8">
-          <div className="w-full flex h-[400px] justify-center items-center flex-row-reverse max-mobile_lg:h-full gap-4">
+          <div className="w-full flex h-[400px] justify-center items-center flex-row-reverse max-mobile_lg:h-full gap-4 max-mobile:gap-2">
             <Image
               src={py7}
               alt="Image 1"

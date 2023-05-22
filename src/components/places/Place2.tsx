@@ -24,13 +24,13 @@ const Place2: FC<Place1Props> = ({}) => {
           <h3>Victoria Falls</h3>
         </div>
         <div className="width flex items-center max-mobile_lg:flex-col gap-8">
-          <div className="w-full flex h-[400px] justify-center flex-row-reverse items-center max-mobile_lg:h-full gap-4">
+          <div className="w-full flex h-[400px] justify-center flex-row-reverse items-center max-mobile_lg:h-full gap-4 max-mobile:gap-2">
             <Image
               src={vic1}
               alt="Image 1"
               className="object-contain h-[400px] w-max rounded-[10px] max-mobile:max-h-[240px] max-mobile_lg:max-h-[350px]"
             />
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 max-mobile:gap-2">
               <Image
                 src={vic4}
                 alt="Image 1"

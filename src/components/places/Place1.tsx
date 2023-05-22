@@ -23,13 +23,13 @@ const Place1: FC<Place1Props> = ({}) => {
           <h3>Masai Mara National Reserve.</h3>
         </div>
         <div className="width flex items-center flex-row-reverse max-mobile_lg:flex-col gap-8 ">
-          <div className="w-full flex justify-center items-center h-[400px] max-mobile_lg:h-full gap-4">
+          <div className="w-full flex justify-center items-center h-[400px] max-mobile_lg:h-full gap-4 max-mobile:gap-2">
             <Image
               src={mara1}
               alt="Image 1"
               className="object-contain h-[400px] w-max rounded-[10px] max-mobile:max-h-[240px] max-mobile_lg:max-h-[350px]"
             />
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 max-mobile:gap-2">
               <Image
                 src={mara3}
                 alt="Image 1"
