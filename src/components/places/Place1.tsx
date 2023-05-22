@@ -7,8 +7,8 @@ interface Place1Props {}
 
 const Place1: FC<Place1Props> = ({}) => {
   return (
-    <div className="flex relative w-full h-[600px] max-mobile:h-full mt-[5rem]">
-      <div className="flex w-full items-center">
+    <div className="flex relative w-full h-[600px] max-mobile_lg:h-full mt-[5rem]">
+      <div className="flex w-full items-center  max-mobile_lg:hidden">
         <div className="w-full relative h-full">
           <div className="w-full flex items-end justify-end">
             <Image src={mara2} alt="Image 1" className=" h-[600px] w-max" />
@@ -17,42 +17,41 @@ const Place1: FC<Place1Props> = ({}) => {
         </div>
         <div className="w-full"></div>
       </div>
-      <div className="absolute w-full top-0 left-0 h-[600px] flex justify-center items-center  max-mobile:h-full ">
-        <div className="width flex items-center flex-row-reverse gap-8">
-          <div className="w-full flex h-[400px] gap-4">
+      <div className="absolute w-full top-0 left-0 h-[600px] flex justify-center items-center flex-col max-mobile_lg:relative  max-mobile:h-full ">
+        <div className="flex flex-col text-center mb-8 gap-2 ">
+          <p className="fc">Kenya</p>
+          <h3>Masai Mara National Reserve.</h3>
+        </div>
+        <div className="width flex items-center flex-row-reverse max-mobile_lg:flex-col gap-8 ">
+          <div className="w-full flex justify-center items-center h-[400px] max-mobile_lg:h-full gap-4">
             <Image
               src={mara1}
               alt="Image 1"
-              className="object-contain h-[400px] w-max rounded-[10px]"
+              className="object-contain h-[400px] w-max rounded-[10px] max-mobile:max-h-[240px] max-mobile_lg:max-h-[350px]"
             />
             <div className="flex flex-col gap-4">
               <Image
                 src={mara3}
                 alt="Image 1"
-                className="object-contain h-max  w-max rounded-[10px]"
+                className="object-contain h-max max-mobile:h-max max-mobile_lg:max-h-[170px] w-max rounded-[10px]"
               />
               <Image
                 src={mara4}
                 alt="Image 1"
-                className="object-contain h-max w-full rounded-[10px]"
+                className="object-contain h-max max-mobile:h-max max-mobile_lg:max-h-[170px]  w-max rounded-[10px]"
               />
             </div>
           </div>
-          <div className="w-full flex flex-col gap-4 -mt-20">
-            <p className="fc">Kenya</p>
-            <h3>Masai Mara National Reserve.</h3>
+          <div className="w-full flex -mt-20 max-mobile_lg:mt-0">
             <p>
-              Masai Mara National Reserve is a wildlife haven located in
-              southwestern Kenya. It is renowned for its abundant wildlife and
-              its role in hosting the Great Migration, where millions of
-              wildebeests, zebras, and gazelles move between the Serengeti and
-              Masai Mara in search of grazing land. Visitors can witness
-              dramatic river crossings, predator-prey interactions, and an array
-              of wildlife, including lions, elephants, cheetahs, and hippos. The
-              reserve offers excellent game viewing opportunities through game
-              drives, hot air balloon safaris, and guided walks. It is also home
-              to the Maasai people, known for their vibrant culture and
-              traditional way of life.
+              Masai Mara National Reserve in Kenya is a wildlife haven famous
+              for its abundant wildlife and hosting the Great Migration.
+              Visitors can witness river crossings, predator-prey interactions,
+              and diverse wildlife, including lions, elephants, cheetahs, and
+              hippos. The reserve offers game drives, hot air balloon safaris,
+              and guided walks for excellent viewing. It is also home to the
+              Maasai people, known for their vibrant culture and traditional way
+              of life.
             </p>
             <div className="flex"></div>
           </div>

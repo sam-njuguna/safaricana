@@ -13,11 +13,11 @@ const Facts: FC<FactsProps> = ({}) => {
           <h2 className="text-text_c">About Africa</h2>
         </div>
       </div>
-      <div className="relative h-[500px]">
+      <div className="relative h-[500px] max-mobile:h-full">
         <Image
           src={p2}
           alt="Image 1"
-          className="object-contain w-full h-[500px]"
+          className="object-contain w-full h-[500px] max-mobile:h-full"
         />
         <div className="absolute bottom-0 left-4">
           <Image
@@ -26,7 +26,7 @@ const Facts: FC<FactsProps> = ({}) => {
             className="object-contain w-full h-max"
           />
         </div>
-        <div className="absolute bottom-1/2 translate-y-1/2 transform right-4">
+        <div className="absolute bottom-1/2 translate-y-1/2 transform right-4 max-mobile:right-0">
           <Image
             src={p4}
             alt="Image 1"
@@ -34,42 +34,39 @@ const Facts: FC<FactsProps> = ({}) => {
           />
         </div>
 
-        <div className="absolute top-0 w-full left-0">
-          <div className="width h-[500px]  flex justify-center items-center relative">
-            <div className="w-[30%] bg-bg_btn_var z-10 p-4 rounded-br-[20px] rounded-tl-[20px] text-text_c ">
-              <p className="font-medium">
-                Africa is the second-largest continent in the world, covering
-                approximately 30.37 million square kilometers (11.7 million
-                square miles).
+        <div className="absolute max-mobile:relative top-0 w-full left-0 max-mobile:-mt-8">
+          <div className="width h-[500px] max-mobile:h-full max-mobile:flex-col gap-4 flex justify-center items-center relative">
+            <div className="w-[30%] max-mobile:w-full max-mobile_lg:w-[45%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 bg-bg_btn_var z-20 p-4 rounded-br-[20px] rounded-tl-[20px] text-text_c ">
+              <p className="font-medium max-mobile_lg:text-[14px]">
+                Africa is the world's second-largest continent, spanning around
+                30.37 million square kilometers (11.7 million square miles).
               </p>
             </div>
-            <div className="w-[30%] absolute top-5 left-0 bg-bg_btn_var z-10 p-4 rounded-br-[20px] rounded-tl-[20px]">
-              <p>
-                Africa is home to various natural wonders, such as Victoria
-                Falls (Zambia and Zimbabwe), the Nile River (the world's longest
-                river), the Serengeti National Park (Tanzania), and the Sahara
-                Desert.
+            <div className="w-[30%] max-mobile:w-full max-mobile_lg:w-[45%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative top-5 max-mobile_lg:top-0 left-0 bg-bg_btn_var z-10 p-4 rounded-br-[20px] rounded-tl-[20px]">
+              <p className="max-mobile_lg:text-[14px]">
+                Africa hosts natural wonders like Victoria Falls, the Nile
+                River, Serengeti National Park, and the Sahara Desert.
               </p>
             </div>
-            <div className="w-[30%] absolute top-[7%] right-0 bg-bg_btn_var z-10 p-4 rounded-br-[20px] rounded-tl-[20px]">
-              <p>
-                Africa has a diverse cultural heritage, with vibrant traditions,
-                music, dance, art, and cuisine. Each country has its own unique
-                cultural practices, customs, and festivals.
+            <div className="w-[30%] max-mobile:w-full max-mobile_lg:w-[45%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile_lg:top-0 absolute max-mobile:relative top-[7%] right-0 bg-bg_btn_var z-10 p-4 rounded-br-[20px] rounded-tl-[20px]">
+              <p className="max-mobile_lg:text-[14px]">
+                Africa boasts diverse cultural heritage, including vibrant
+                traditions, music, dance, art, and cuisine, with each country
+                having unique practices, customs, and festivals.
               </p>
             </div>
-            <div className="w-[30%] absolute bottom-0 left-[10%] bg-bg_btn_var z-10 p-4 rounded-br-[20px] rounded-tl-[20px]">
-              <p>
-                Africa is renowned for its rich wildlife. It is home to the "Big
-                Five" game animals: lions, elephants, buffalos, leopards, and
-                rhinoceroses.
+            <div className="w-[30%] max-mobile:w-full max-mobile_lg:w-[45%] max-mobile_lg:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative bottom-0 left-[10%] bg-bg_btn_var z-10 p-4 rounded-br-[20px] rounded-tl-[20px]">
+              <p className="max-mobile_lg:text-[14px]">
+                Africa boasts diverse cultural heritage, vibrant traditions,
+                music, dance, art, and cuisine. Each country holds unique
+                practices, customs, and festivals.
               </p>
             </div>
-            <div className="w-[30%] absolute bottom-[10%] right-0 bg-bg_btn_var z-10 p-4 rounded-br-[20px] rounded-tl-[20px]">
-              <p>
-                Africa boasts diverse landscapes, including vast deserts like
-                the Sahara, the world's largest hot desert, as well as savannas,
-                rainforests, mountains and coastal areas.
+            <div className="w-[30%] max-mobile:w-full max-mobile_lg:w-[45%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative bottom-[10%] max-mobile_lg:bottom-0 right-0 bg-bg_btn_var z-10 p-4 rounded-br-[20px] rounded-tl-[20px]">
+              <p className="max-mobile_lg:text-[14px]">
+                Africa features diverse landscapes: deserts like the Sahara, the
+                world's largest hot desert, alongside savannas, rainforests,
+                mountains, and coastlines.
               </p>
             </div>
           </div>

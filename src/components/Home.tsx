@@ -8,7 +8,7 @@ interface HomeProps {}
 const Home: FC<HomeProps> = ({}) => {
   return (
     <section className="home pt-[10rem]">
-      <div className="width h-[500px] max-mobile:h-full max-mobile:overflow-hidden ">
+      <div className="width h-[500px]  max-mobile_lg:h-full max-mobile_lg:overflow-hidden ">
         <div className="flex items-center  max-mobile:flex-col ">
           <div className=" flex flex-col w-[80%] max-mobile:w-full gap-y-4">
             <div className="">
@@ -26,9 +26,9 @@ const Home: FC<HomeProps> = ({}) => {
               <Image
                 src={h2}
                 alt="Image 1"
-                className="  object-cover w-[300px] h-auto max-mobile:hidden  rounded-[10px]"
+                className="  object-cover w-[300px] max-mobile_lg:w-[200px] h-auto max-mobile_lg:hidden  rounded-[10px]"
               />
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 ">
                 <Image
                   src={h1}
                   alt="Image 2"
@@ -43,7 +43,7 @@ const Home: FC<HomeProps> = ({}) => {
                   <Image
                     src={h3}
                     alt="Image 3"
-                    className="w-full h-auto  rounded-[10px] max-mobile:w-[300px]  max-mobile:h-[150px]"
+                    className="w-full h-max  rounded-[10px] max-mobile:w-[300px]  max-mobile:h-[150px]"
                   />
                 </div>
               </div>

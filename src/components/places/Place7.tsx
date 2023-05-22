@@ -8,8 +8,8 @@ interface Place1Props {}
 
 const Place7: FC<Place1Props> = ({}) => {
   return (
-    <div className="flex relative w-full h-[600px] max-mobile:h-full mt-[5rem]">
-      <div className="flex w-full items-baseline">
+    <div className="flex relative w-full h-[600px] max-mobile_lg:h-full mt-[5rem]">
+      <div className="flex w-full items-baseline max-mobile_lg:hidden">
         <div className="w-full relative h-full">
           <div className="w-full flex items-end justify-end">
             <Image src={soss3} alt="Image 1" className=" h-[600px] w-max" />
@@ -19,42 +19,41 @@ const Place7: FC<Place1Props> = ({}) => {
 
         <div className="w-full"></div>
       </div>
-      <div className="absolute w-full top-0 left-0 h-[600px] flex justify-center items-center  max-mobile:h-full ">
-        <div className="width flex items-center flex-row-reverse gap-8">
-          <div className="w-full flex h-[400px] flex-row-reverse gap-4">
+      <div className="absolute max-mobile_lg:relative w-full top-0 left-0 h-[600px] flex justify-center items-center flex-col  max-mobile_lg:h-full ">
+        <div className="flex flex-col text-center mb-8 gap-2 ">
+          <p className="fc">Namibia</p>
+          <h3>Sossusvlei.</h3>
+        </div>
+        <div className="width flex items-center flex-row-reverse max-mobile_lg:flex-col gap-8">
+          <div className="w-full flex h-[400px] justify-center items-center max-mobile_lg:h-full  gap-4 max-mobile:gap-2">
             <Image
               src={soss2}
               alt="Image 1"
-              className="object-contain h-[400px] w-max rounded-[10px]"
+              className="object-contain h-[400px] w-max rounded-[10px] max-mobile:max-h-[250px] max-mobile_lg:max-h-[350px]"
             />
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 max-mobile:gap-2">
               <Image
                 src={soss1}
                 alt="Image 1"
-                className="object-contain h-max  w-max rounded-[10px]"
+                className="object-contain h-max max-mobile:h-max max-mobile_lg:max-h-[170px] w-max rounded-[10px]"
               />
               <Image
                 src={soss4}
                 alt="Image 1"
-                className="object-contain h-max w-full rounded-[10px]"
+                className="object-contain h-max max-mobile:h-max max-mobile_lg:max-h-[170px] w-max rounded-[10px]"
               />
             </div>
           </div>
-          <div className="w-full flex flex-col gap-4 -mt-20">
-            <p className="fc">Namibia</p>
-            <h3>Sossusvlei.</h3>
+          <div className="w-full flex  -mt-20 max-mobile_lg:mt-0">
             <p>
-              Sossusvlei is a surreal desert landscape located within the
-              Namib-Naukluft National Park in Namibia. It is characterized by
-              towering red sand dunes, some of which are among the highest in
-              the world. The contrast between the fiery orange dunes, the deep
-              blue sky, and the stark white clay pans creates a stunning visual
-              spectacle. Visitors can climb the dunes to enjoy panoramic views,
-              explore the Deadvlei, a dried-up clay pan with iconic dead camel
-              thorn trees, and take part in thrilling activities such as
+              Sossusvlei in Namibia's Namib-Naukluft National Park is a surreal
+              desert with towering red sand dunes, some of the world's highest.
+              The fiery orange dunes, blue sky, and white clay pans create a
+              stunning spectacle. Visitors can climb dunes for panoramic views,
+              explore Deadvlei's iconic dead camel thorn trees, and enjoy
               sandboarding and hot air balloon rides. Sossusvlei is a
-              photographer's paradise and offers a unique and otherworldly
-              experience in the heart of the desert.
+              photographer's paradise, offering a unique and otherworldly desert
+              experience.
             </p>
             <div className="flex"></div>
           </div>

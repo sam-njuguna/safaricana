@@ -7,7 +7,7 @@ interface Place1Props {}
 const Place3: FC<Place1Props> = ({}) => {
   return (
     <div className="flex relative w-full h-[600px] max-mobile:h-full mt-[5rem]">
-      <div className="flex w-full items-baseline">
+      <div className="flex w-full items-baseline max-mobile_lg:hidden">
         <div className="w-full relative h-full">
           <div className="w-full flex items-end justify-end">
             <Image src={mara2} alt="Image 1" className=" h-[600px] w-max" />
@@ -16,28 +16,28 @@ const Place3: FC<Place1Props> = ({}) => {
         </div>
         <div className="w-full"></div>
       </div>
-      <div className="absolute w-full top-0 left-0 h-[600px] flex justify-center items-center  max-mobile:h-full ">
-        <div className="width flex items-center flex-row-reverse gap-8">
-          <div className="w-full flex h-[400px] gap-4">
+      <div className="absolute w-full top-0 left-0 h-[600px] flex justify-center items-center max-mobile_lg:relative  max-mobile:h-full ">
+        <div className="width flex items-center flex-row-reverse max-mobile:flex-col gap-8">
+          <div className="w-full flex h-[400px] max-mobile:h-full gap-4">
             <Image
               src={mara1}
               alt="Image 1"
-              className="object-contain h-[400px] w-max rounded-[10px]"
+              className="object-contain h-[400px] w-max rounded-[10px] max-mobile:h-[250px]"
             />
             <div className="flex flex-col gap-4">
               <Image
                 src={mara3}
                 alt="Image 1"
-                className="object-contain h-[200px]  w-max rounded-[10px]"
+                className="object-contain h-max max-mobile:h-max max-mobile_lg:max-h-[200px] w-max rounded-[10px]"
               />
               <Image
                 src={mara4}
                 alt="Image 1"
-                className="object-contain h-[180px] w-full rounded-[10px]"
+                className="object-contain h-max max-mobile:h-max max-mobile_lg:max-h-[200px] w-max rounded-[10px]"
               />
             </div>
           </div>
-          <div className="w-full flex flex-col gap-4 -mt-20">
+          <div className="w-full flex flex-col gap-4 -mt-20 max-mobile_lg:mt-0">
             <p className="fc">Tanzania</p>
             <h3>Serengeti National Park.</h3>
             <p>
