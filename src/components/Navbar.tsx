@@ -45,18 +45,18 @@ const Navbar: FC<NavbarProps> = ({}) => {
     };
   }, []);
   return (
-    <nav className={`navbar fixed w-full z-40 top-0  pt-2 `}>
-      <div className={`width h-[80px] relative`}>
+    <nav className={`navbar fixed w-full z-40 top-0   `}>
+      <div className={`width h-[85px] relative`}>
         {scrolled ? (
           <Image
             src={btn}
             alt="header"
-            className="object-fit h-[80px] w-full duration-300 ease-out"
+            className="object-fit h-[85px]  w-full duration-300 ease-out"
           />
         ) : (
           ""
         )}
-        <div className="absolute top-0 w-full flex items-baseline px-8 py-5 ">
+        <div className="absolute top-0 w-full flex items-baseline px-8 py-5 max-mobile:px-6 ">
           <a
             href="#"
             className={`flex items-baseline w-max ${
@@ -67,7 +67,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
             <Image src={logo} alt="logo" className="w-[40px]" />
             <h4>Safaricana.</h4>
           </a>
-          <ul className=" flex-1 flex items-center justify-center gap-8">
+          <ul className=" flex-1 flex items-center justify-center gap-8 max-mobile:gap-6">
             <li>
               <a
                 href="#places"
