@@ -1,4 +1,4 @@
-import { fact, p1, p2, p4 } from "@/assets";
+import { fact, p1, p2, p4, btn } from "@/assets";
 import Image from "next/image";
 import { FC } from "react";
 
@@ -14,11 +14,16 @@ const Facts: FC<FactsProps> = ({}) => {
         </div>
       </div>
       <div className="relative h-[500px] max-mobile:h-full">
-        <Image
-          src={p2}
-          alt="Image 1"
-          className="object-contain w-full h-[500px] max-mobile:h-full"
-        />
+        <div className="relative">
+          <Image
+            src={p2}
+            alt="Image 1"
+            className="object-contain w-full h-[500px] max-mobile:h-full"
+          />
+
+          <div className="absolute max-mobile:hidden bottom-0 left-0 h-[100px] w-full bg-gradient-to-t from-[#070707]  via-[#070707c5] max-tablet_lg:to-[#070707c5]"></div>
+        </div>
+
         <div className="absolute bottom-0 left-4">
           <Image
             src={p1}
@@ -49,7 +54,7 @@ const Facts: FC<FactsProps> = ({}) => {
             </div>
             <div className="w-[30%] max-mobile:w-full max-tablet:w-[40%] max-mobile_lg:w-[50%] max-tablet_lg:w-[35%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative top-5 max-mobile_lg:top-0 left-0  z-10rounded-br-[20px]">
               <Image
-                src={fact}
+                src={btn}
                 alt="header"
                 className="object-contain brightness-[90%] h-full w-full duration-300 ease-out"
               />
@@ -71,7 +76,7 @@ const Facts: FC<FactsProps> = ({}) => {
             </div>
             <div className="w-[30%] max-mobile:w-full max-tablet:w-[40%] max-mobile_lg:w-[50%] max-tablet_lg:w-[35%] max-mobile_lg:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative bottom-0 left-[10%]  z-10 ">
               <Image
-                src={fact}
+                src={btn}
                 alt="header"
                 className="object-contain brightness-[90%] h-full w-full duration-300 ease-out"
               />

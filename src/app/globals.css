@@ -29,7 +29,7 @@
     @apply leading-[1.5] font-jost font-normal;
   }
   h4 {
-    @apply text-[1.1rem] leading-[1.1rem] font-crimson font-bold;
+    @apply text-[1.1rem] leading-[1.1rem] max-mobile:text-[.9rem] font-crimson font-bold;
   }
   .fx {
     @apply flex items-center gap-4;

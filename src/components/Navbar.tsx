@@ -71,7 +71,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
             <li>
               <a
                 href="#places"
-                className={` text-[1.1rem] max-mobile:text-[.9rem] capitalize font-semibold duration-500 ease-out hover:text-text_c ${
+                className={` text-[1.1rem] max-mobile:text-[.8rem] capitalize font-semibold duration-500 ease-out hover:text-text_c ${
                   activeSection === "places" ? " text-text_c" : ""
                 }`}
                 onClick={() => setActiveSection("places")}
@@ -82,12 +82,23 @@ const Navbar: FC<NavbarProps> = ({}) => {
             <li>
               <a
                 href="#facts"
-                className={` text-[1.1rem] max-mobile:text-[.9rem]  capitalize font-semibold duration-500 ease-out hover:text-text_c ${
+                className={` text-[1.1rem] max-mobile:text-[.8rem]  capitalize font-semibold duration-500 ease-out hover:text-text_c ${
                   activeSection === "facts" ? "text-text_c" : ""
                 }`}
                 onClick={() => setActiveSection("facts")}
               >
                 Facts
+              </a>
+            </li>
+            <li>
+              <a
+                href="#end"
+                className={` text-[1.1rem] max-mobile:text-[.8rem]  capitalize font-semibold duration-500 ease-out hover:text-text_c ${
+                  activeSection === "end" ? "text-text_c" : ""
+                }`}
+                onClick={() => setActiveSection("end")}
+              >
+                Ping
               </a>
             </li>
           </ul>
