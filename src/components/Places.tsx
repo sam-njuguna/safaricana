@@ -11,27 +11,54 @@ import {
   Place8,
 } from "./places";
 import { motion } from "framer-motion";
-
-import { useInView } from "react-intersection-observer";
+import { staggerContainer } from "@/animations";
 
 interface PlacesProps {}
 
 const Places: FC<PlacesProps> = ({}) => {
-  const [ref, inView] = useInView({
-    triggerOnce: false,
-    threshold: 0.1,
-  });
   return (
     <motion.section
-      className="places pt-[5rem] pb-[5rem] all-width "
+      className="places pt-[5rem] pb-[5rem] all-width overflow-hidden "
       id="places"
+      variants={staggerContainer(0.2, 0)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
     >
       <div className="width flex flex-col items-center text-center">
-        <motion.p className="uppercase font-bold tracking-[1px] text-[12px]">
+        <motion.p
+          whileInView={{
+            y: [100, 0],
+            transition: {
+              duration: 0.8,
+              delay: 0.8,
+            },
+          }}
+          className="uppercase font-bold tracking-[1px] text-[12px]"
+        >
           Famous
         </motion.p>
-        <motion.h2>Destinations</motion.h2>
-        <motion.p className="mt-4">
+        <motion.h2
+          whileInView={{
+            y: [100, 0],
+            transition: {
+              duration: 0.9,
+              delay: 0.9,
+            },
+          }}
+        >
+          Destinations
+        </motion.h2>
+        <motion.p
+          whileInView={{
+            y: [100, 0],
+            transition: {
+              duration: 1,
+              delay: 1,
+            },
+          }}
+          className="mt-4"
+        >
           Get a sneak peek at Africa's famous tourist attractions.
         </motion.p>
       </div>

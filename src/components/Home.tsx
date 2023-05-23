@@ -1,18 +1,14 @@
 "use client";
+import { slideIn } from "@/animations";
 import { fadeIn, staggerContainer } from "@/animations";
 import { btn, h1, h2, h3, p4 } from "@/assets";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { FC } from "react";
-import { useInView } from "react-intersection-observer";
 
 interface HomeProps {}
 
 const Home: FC<HomeProps> = ({}) => {
-  const [ref, inView] = useInView({
-    triggerOnce: false,
-    threshold: 0.1,
-  });
   return (
     <motion.section
       className="home pt-[10rem]"
@@ -26,20 +22,20 @@ const Home: FC<HomeProps> = ({}) => {
         <div className="flex items-center  max-mobile:flex-col ">
           <div className=" flex flex-col w-[80%] max-mobile:w-full gap-y-4">
             <div className="">
-              <motion.h1 variants={fadeIn("right", "tween", 1.3, 1)}>
+              <motion.h1 variants={slideIn("left", "tween", 0.7, 0.7)}>
                 Discover
               </motion.h1>
-              <motion.h1 variants={fadeIn("right", "tween", 1.3, 1)}>
+              <motion.h1 variants={slideIn("left", "tween", 0.8, 0.8)}>
                 Africa🌍
               </motion.h1>
             </div>
-            <motion.p variants={fadeIn("right", "tween", 1.3, 1)}>
+            <motion.p variants={slideIn("left", "tween", 1, 0.7)}>
               Unlock the captivating allure of Africa and embark on a journey of
               breathtaking landscapes, vibrant cultures, and untamed adventures.
             </motion.p>
 
             <motion.a
-              variants={fadeIn("right", "tween", 1.3, 1)}
+              variants={slideIn("left", "tween", 0.9, 0.9)}
               className="border-[2px] border-transparent hover:border-[#985A27]  relative h-[50px] flex items-center justify-center  w-[180px] group duration-300 ease-out mt-8"
               href="#places"
             >
@@ -60,7 +56,10 @@ const Home: FC<HomeProps> = ({}) => {
           </div>
           <div className="w-full max-mobile:mt-8">
             <div className="flex gap-4 max-mobile:flex-col w-full">
-              <motion.div className="w-full max-mobile:hidden">
+              <motion.div
+                variants={fadeIn("right", "tween", 1, 1)}
+                className="w-full max-mobile:hidden"
+              >
                 <Image
                   src={h2}
                   alt="Image 1"
@@ -68,7 +67,10 @@ const Home: FC<HomeProps> = ({}) => {
                 />
               </motion.div>
               <div className="flex flex-col gap-4 w-full">
-                <motion.div className=" w-full">
+                <motion.div
+                  variants={fadeIn("right", "tween", 1.1, 1.1)}
+                  className=" w-full"
+                >
                   <Image
                     src={h1}
                     alt="Image 2"
@@ -77,14 +79,20 @@ const Home: FC<HomeProps> = ({}) => {
                 </motion.div>
 
                 <div className="flex gap-4">
-                  <motion.div className="">
+                  <motion.div
+                    variants={fadeIn("right", "tween", 1.2, 1.2)}
+                    className=""
+                  >
                     <Image
                       src={p4}
                       alt="Image 2"
                       className="h-auto max-mobile:w-[50px]  max-mobile:h-[50px]  max-tablet:w-[40px]"
                     />
                   </motion.div>
-                  <motion.div className="w-full ">
+                  <motion.div
+                    variants={fadeIn("right", "tween", 1.3, 1.3)}
+                    className="w-full "
+                  >
                     <Image
                       src={h3}
                       alt="Image 3"

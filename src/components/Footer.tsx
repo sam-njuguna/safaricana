@@ -1,4 +1,5 @@
 "use client";
+import { slideIn, staggerContainer } from "@/animations";
 import { p1, p3, p4 } from "@/assets";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -8,12 +9,26 @@ interface FooterProps {}
 
 const Footer: FC<FooterProps> = ({}) => {
   return (
-    <motion.section className="footer pt-20" id="end">
+    <motion.section
+      variants={staggerContainer(0.2, 0)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="footer pt-20"
+      id="end"
+    >
       <div className="width h-[600px] relative  flex-col flex justify-center items-center text-center">
         <motion.div className="flex flex-col justify-center items-center ">
-          <p>You've arrived at the end of this, </p>
-          <h2>Enthralling Exploration</h2>
-          <p className="w-[50%] max-mobile:w-full">
+          <motion.p variants={slideIn("up", "tween", 0.8, 0.8)}>
+            You've arrived at the end of this,{" "}
+          </motion.p>
+          <motion.h2 variants={slideIn("up", "tween", 0.9, 0.9)}>
+            Enthralling Exploration
+          </motion.h2>
+          <motion.p
+            variants={slideIn("up", "tween", 1, 1)}
+            className="w-[50%] max-mobile:w-full"
+          >
             Goodbye👋 and thank you for joining me on this journey to discover
             Africa. If you're interested in staying connected, feel free to
             connect with me via
@@ -43,7 +58,7 @@ const Footer: FC<FooterProps> = ({}) => {
               Discord
             </a>
             .
-          </p>
+          </motion.p>
         </motion.div>
         <Image
           src={p4}

@@ -1,4 +1,5 @@
 "use client";
+import { fadeIn, slideIn, staggerContainer } from "@/animations";
 import { fact, p1, p2, p4, btn } from "@/assets";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -8,11 +9,25 @@ interface FactsProps {}
 
 const Facts: FC<FactsProps> = ({}) => {
   return (
-    <motion.section className="facts pt-20" id="facts">
+    <motion.section
+      variants={staggerContainer(0.2, 0)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="facts pt-20"
+      id="facts"
+    >
       <div className="width">
         <div className="w-full justify-center items-center text-center mb-4">
-          <motion.h2>Travel Facts </motion.h2>
-          <motion.h2 className="text-text_c">About Africa</motion.h2>
+          <motion.h2 variants={slideIn("up", "tween", 0.8, 0.8)}>
+            Travel Facts
+          </motion.h2>
+          <motion.h2
+            variants={fadeIn("up", "tween", 0.9, 0.9)}
+            className="text-text_c"
+          >
+            About Africa
+          </motion.h2>
         </div>
       </div>
       <div className="relative h-[500px] max-mobile:h-full">
@@ -43,7 +58,10 @@ const Facts: FC<FactsProps> = ({}) => {
 
         <div className="absolute max-mobile:relative top-0 w-full left-0 max-mobile:-mt-16">
           <div className="width h-[500px] max-mobile:h-full max-mobile:flex-col  flex justify-center items-center relative">
-            <motion.div className="w-[30%] max-mobile:w-full relative  max-tablet:w-[40%] max-mobile_lg:w-[50%] max-tablet_lg:w-[35%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0  z-20 ">
+            <motion.div
+              variants={fadeIn("up", "tween", 1, 1)}
+              className="w-[30%] max-mobile:w-full relative  max-tablet:w-[40%] max-mobile_lg:w-[50%] max-tablet_lg:w-[35%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0  z-20 "
+            >
               <Image
                 src={fact}
                 alt="header"
@@ -54,7 +72,10 @@ const Facts: FC<FactsProps> = ({}) => {
                 terms of land area and population.
               </p>
             </motion.div>
-            <motion.div className="w-[30%] max-mobile:w-full max-tablet:w-[40%] max-mobile_lg:w-[50%] max-tablet_lg:w-[35%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative top-5 max-mobile_lg:top-0 left-0  z-10rounded-br-[20px]">
+            <motion.div
+              variants={fadeIn("up", "tween", 1.2, 1.2)}
+              className="w-[30%] max-mobile:w-full max-tablet:w-[40%] max-mobile_lg:w-[50%] max-tablet_lg:w-[35%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative top-5 max-mobile_lg:top-0 left-0  z-10rounded-br-[20px]"
+            >
               <Image
                 src={btn}
                 alt="header"
@@ -65,7 +86,10 @@ const Facts: FC<FactsProps> = ({}) => {
                 River,National Park, and the Sahara Desert.
               </p>
             </motion.div>
-            <motion.div className="w-[30%] max-mobile:w-full max-tablet:w-[40%] max-mobile_lg:w-[50%] max-tablet_lg:w-[35%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile_lg:top-0 absolute max-mobile:relative top-[7%] max-tablet:top-[3%] right-0 z-10 ">
+            <motion.div
+              variants={fadeIn("up", "tween", 1.3, 1.3)}
+              className="w-[30%] max-mobile:w-full max-tablet:w-[40%] max-mobile_lg:w-[50%] max-tablet_lg:w-[35%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile_lg:top-0 absolute max-mobile:relative top-[7%] max-tablet:top-[3%] right-0 z-10 "
+            >
               <Image
                 src={fact}
                 alt="header"
@@ -76,7 +100,10 @@ const Facts: FC<FactsProps> = ({}) => {
                 traditions, music, dance, art, and cuisine.
               </p>
             </motion.div>
-            <motion.div className="w-[30%] max-mobile:w-full max-tablet:w-[40%] max-mobile_lg:w-[50%] max-tablet_lg:w-[35%] max-mobile_lg:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative bottom-0 left-[10%]  z-10 ">
+            <motion.div
+              variants={fadeIn("up", "tween", 1.4, 1.4)}
+              className="w-[30%] max-mobile:w-full max-tablet:w-[40%] max-mobile_lg:w-[50%] max-tablet_lg:w-[35%] max-mobile_lg:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative bottom-0 left-[10%]  z-10 "
+            >
               <Image
                 src={btn}
                 alt="header"
@@ -87,7 +114,10 @@ const Facts: FC<FactsProps> = ({}) => {
                 (elephant, lion, leopard, buffalo, and rhinoceros) .
               </p>
             </motion.div>
-            <motion.div className="w-[30%] max-mobile:w-full max-tablet:w-[40%] max-mobile_lg:w-[50%] max-tablet_lg:w-[35%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative bottom-[10%] max-mobile_lg:bottom-0 max-tablet:bottom-[3%] right-0 z-10 ">
+            <motion.div
+              variants={fadeIn("up", "tween", 1.5, 1.5)}
+              className="w-[30%] max-mobile:w-full max-tablet:w-[40%] max-mobile_lg:w-[50%] max-tablet_lg:w-[35%] max-mobile:left-0 max-mobile:bottom-0 max-mobile:right-0 max-mobile:top-0 absolute max-mobile:relative bottom-[10%] max-mobile_lg:bottom-0 max-tablet:bottom-[3%] right-0 z-10 "
+            >
               <Image
                 src={fact}
                 alt="header"
