@@ -1,5 +1,5 @@
 "use client";
-import { logo } from "@/assets";
+import { btn, logo } from "@/assets";
 import Image from "next/image";
 import { FC, useEffect, useState } from "react";
 
@@ -45,48 +45,53 @@ const Navbar: FC<NavbarProps> = ({}) => {
     };
   }, []);
   return (
-    <nav className={`navbar fixed w-full z-40 top-0  pt-4 `}>
-      <div
-        className={`width flex items-baseline py-2 px-4 border-[2px] border-transparent  ${
-          scrolled
-            ? " duration-500 ease-in-out bg-bg_btn_var rounded-full border-[2px] border-[#8f6a4c]"
-            : ""
-        } `}
-      >
-        <a
-          href="#"
-          className={`flex items-baseline w-max ${
-            activeSection === "" ? "text-text_c" : ""
-          } `}
-          onClick={() => setActiveSection("")}
-        >
-          <Image src={logo} alt="logo" className="w-[30px]" />
-          <h4>Safaricana.</h4>
-        </a>
-        <ul className=" flex-1 flex items-center justify-center gap-8">
-          <li>
-            <a
-              href="#places"
-              className={` text-[1.1rem] max-mobile:text-[.9rem] capitalize font-semibold duration-500 ease-out hover:text-text_c ${
-                activeSection === "places" ? " text-text_c" : ""
-              }`}
-              onClick={() => setActiveSection("places")}
-            >
-              Places
-            </a>
-          </li>
-          <li>
-            <a
-              href="#facts"
-              className={` text-[1.1rem] max-mobile:text-[.9rem]  capitalize font-semibold duration-500 ease-out hover:text-text_c ${
-                activeSection === "facts" ? "text-text_c" : ""
-              }`}
-              onClick={() => setActiveSection("facts")}
-            >
-              Facts
-            </a>
-          </li>
-        </ul>
+    <nav className={`navbar fixed w-full z-40 top-0  pt-2 `}>
+      <div className={`width h-[80px] relative`}>
+        {scrolled ? (
+          <Image
+            src={btn}
+            alt="header"
+            className="object-fit h-[80px] w-full duration-300 ease-out"
+          />
+        ) : (
+          ""
+        )}
+        <div className="absolute top-0 w-full flex items-baseline px-8 py-5 ">
+          <a
+            href="#"
+            className={`flex items-baseline w-max ${
+              activeSection === "" ? "text-text_c" : ""
+            } `}
+            onClick={() => setActiveSection("")}
+          >
+            <Image src={logo} alt="logo" className="w-[40px]" />
+            <h4>Safaricana.</h4>
+          </a>
+          <ul className=" flex-1 flex items-center justify-center gap-8">
+            <li>
+              <a
+                href="#places"
+                className={` text-[1.1rem] max-mobile:text-[.9rem] capitalize font-semibold duration-500 ease-out hover:text-text_c ${
+                  activeSection === "places" ? " text-text_c" : ""
+                }`}
+                onClick={() => setActiveSection("places")}
+              >
+                Places
+              </a>
+            </li>
+            <li>
+              <a
+                href="#facts"
+                className={` text-[1.1rem] max-mobile:text-[.9rem]  capitalize font-semibold duration-500 ease-out hover:text-text_c ${
+                  activeSection === "facts" ? "text-text_c" : ""
+                }`}
+                onClick={() => setActiveSection("facts")}
+              >
+                Facts
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );

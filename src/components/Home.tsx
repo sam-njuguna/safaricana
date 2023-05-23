@@ -1,5 +1,5 @@
 "use client";
-import { h1, h2, h3, p1 } from "@/assets";
+import { btn, h1, h2, h3, p1 } from "@/assets";
 import Image from "next/image";
 import { FC } from "react";
 
@@ -21,17 +21,22 @@ const Home: FC<HomeProps> = ({}) => {
             </p>
             {/* <button className="btn mt-8 w-max">Explore</button> */}
             <a
-              className="border-[2px] border-[#985A27] relative py-3 px-10 w-max group duration-500 ease-out hover:bg-bg_btn_var mt-8"
+              className="border-[2px] border-transparent hover:border-[#985A27]  relative h-[50px] flex items-center justify-center  w-[180px] group duration-300 ease-out mt-8"
               href="#"
             >
-              <span className=" absolute z-10 -top-[2px] left-2 block bg-bg  h-[2px] duration-500 ease-out w-[20%] group-hover:w-[0%]"></span>
-              <span className="flex items-center gap-1">
-                <span className="block h-[2px] w-6 bg-bg_btn_var duration-500 ease-out group-hover:bg-white group-hover:w-3"></span>
-                <span className="uppercase text-text_c font-semibold text-[12px] tracking-[2px]">
+              <span className=" absolute z-20 -top-[2px] left-2 block bg-bg  h-[2px] duration-500 ease-out w-[20%] "></span>
+              <span className=" absolute z-20 -bottom-[2px] right-2 block bg-bg  h-[2px] duration-500 ease-out w-[20%] "></span>
+              <Image
+                src={btn}
+                alt="Image 1"
+                className="object-cover w-full duration-500 ease-out group-hover:pl-[200px]  "
+              />
+              <span className="flex items-center gap-1  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <span className="block h-[4px] w-6 bg-bg_btn_var duration-1000 ease-out group-hover:bg-white group-hover:w-4"></span>
+                <span className="uppercase text-black font-bold text-[12px] tracking-[2px] group-hover:text-text_c">
                   Explore
                 </span>
               </span>
-              <span className=" absolute z-10 -bottom-[2px] right-2 block bg-bg  h-[2px] duration-500 ease-out w-[20%] group-hover:w-[0%]"></span>
             </a>
           </div>
           <div className="w-full max-mobile:mt-8">
