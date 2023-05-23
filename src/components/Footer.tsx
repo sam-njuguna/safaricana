@@ -8,7 +8,7 @@ interface FooterProps {}
 const Footer: FC<FooterProps> = ({}) => {
   return (
     <section className="footer pt-20" id="end">
-      <div className="width h-[600px] relative max-mobile:h-[400px] flex-col flex justify-center items-center text-center">
+      <div className="width h-[600px] relative  flex-col flex justify-center items-center text-center">
         <div className="flex flex-col justify-center items-center ">
           <p>You've arrived at the end of this, </p>
           <h2>Enthralling Exploration</h2>
@@ -52,7 +52,7 @@ const Footer: FC<FooterProps> = ({}) => {
         <Image
           src={p1}
           alt="header"
-          className="object-fit absolute bottom-0 right-0 h-[100px]  w-max duration-300 ease-out"
+          className="object-fit absolute bottom-0 right-0 h-[100px] max-mobile:h-[40px]  w-max duration-300 ease-out"
         />
       </div>
 

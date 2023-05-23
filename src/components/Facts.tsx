@@ -28,7 +28,7 @@ const Facts: FC<FactsProps> = ({}) => {
           <Image
             src={p1}
             alt="Image 1"
-            className="object-contain w-full h-max"
+            className="object-contain w-full h-max max-mobile:h-[60px] "
           />
         </div>
         <div className="absolute bottom-1/2 translate-y-1/2 transform right-4 max-mobile:right-0">
@@ -45,7 +45,7 @@ const Facts: FC<FactsProps> = ({}) => {
               <Image
                 src={fact}
                 alt="header"
-                className="object-contain brightness-[90%] h-full w-full duration-300 ease-out "
+                className="object-contain brightness-[85%] h-full w-full duration-300 ease-out "
               />
               <p className="text-[14px] text-black  font-medium absolute w-[80%] max-mobile_lg:w-[90%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 Africa is the second-largest continent in the world, both in
@@ -56,7 +56,7 @@ const Facts: FC<FactsProps> = ({}) => {
               <Image
                 src={btn}
                 alt="header"
-                className="object-contain brightness-[90%] h-full w-full duration-300 ease-out"
+                className="object-contain brightness-[85%] h-full w-full duration-300 ease-out"
               />
               <p className="text-[14px] text-text_c absolute w-[80%] max-mobile_lg:w-[90%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 Africa hosts natural wonders eg Victoria Falls, the Nile
@@ -67,7 +67,7 @@ const Facts: FC<FactsProps> = ({}) => {
               <Image
                 src={fact}
                 alt="header"
-                className="object-contain brightness-[90%] h-full w-full duration-300 ease-out"
+                className="object-contain brightness-[85%] h-full w-full duration-300 ease-out"
               />
               <p className="text-[14px] text-text_c absolute w-[80%] max-mobile_lg:w-[90%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 Africa boasts diverse cultural heritage, including vibrant
@@ -78,7 +78,7 @@ const Facts: FC<FactsProps> = ({}) => {
               <Image
                 src={btn}
                 alt="header"
-                className="object-contain brightness-[90%] h-full w-full duration-300 ease-out"
+                className="object-contain brightness-[85%] h-full w-full duration-300 ease-out"
               />
               <p className="text-[14px] text-text_c absolute w-[80%] max-mobile_lg:w-[90%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 Wildlife safaris provide opportunities to see the "Big Five"
@@ -89,7 +89,7 @@ const Facts: FC<FactsProps> = ({}) => {
               <Image
                 src={fact}
                 alt="header"
-                className="object-contain brightness-[90%] h-full w-full duration-300 ease-out"
+                className="object-contain brightness-[85%] h-full w-full duration-300 ease-out"
               />
               <p className="text-[14px] text-text_c absolute w-[80%] max-mobile_lg:w-[90%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 Africa features diverse landscapes: deserts eg Sahara, alongside
