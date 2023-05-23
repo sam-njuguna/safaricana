@@ -67,7 +67,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
             <Image src={logo} alt="logo" className="w-[40px]" />
             <h4>Safaricana.</h4>
           </a>
-          <ul className=" flex-1 flex items-center justify-center gap-8 max-mobile:gap-6">
+          <ul className=" flex-1 flex items-center justify-center gap-8 max-mobile:gap-4">
             <li>
               <a
                 href="#places"

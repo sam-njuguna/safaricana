@@ -8,7 +8,7 @@ interface FooterProps {}
 const Footer: FC<FooterProps> = ({}) => {
   return (
     <section className="footer pt-20" id="end">
-      <div className="width h-[600px] relative max-mobile:h-full flex-col flex justify-center items-center text-center">
+      <div className="width h-[600px] relative max-mobile:h-[400px] flex-col flex justify-center items-center text-center">
         <div className="flex flex-col justify-center items-center ">
           <p>You've arrived at the end of this, </p>
           <h2>Enthralling Exploration</h2>
