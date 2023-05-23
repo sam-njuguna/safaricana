@@ -22,7 +22,7 @@ const Home: FC<HomeProps> = ({}) => {
             {/* <button className="btn mt-8 w-max">Explore</button> */}
             <a
               className="border-[2px] border-transparent hover:border-[#985A27]  relative h-[50px] flex items-center justify-center  w-[180px] group duration-300 ease-out mt-8"
-              href="#"
+              href="#places"
             >
               <span className=" absolute z-20 -top-[2px] left-2 block bg-bg  h-[2px] duration-500 ease-out w-[20%] "></span>
               <span className=" absolute z-20 -bottom-[2px] right-2 block bg-bg  h-[2px] duration-500 ease-out w-[20%] "></span>
