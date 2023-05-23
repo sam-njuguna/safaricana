@@ -6,6 +6,8 @@ import p1 from "./p1.svg";
 import p2 from "./p2.svg";
 import p3 from "./p3.svg";
 import p4 from "./p4.svg";
+import fact from "./fact.svg";
+import btn from "./btn.svg";
 import mara1 from "./mara/mara1.jpeg";
 import mara2 from "./mara/mara2.jpeg";
 import mara3 from "./mara/mara3.jpeg";
@@ -37,6 +39,8 @@ import bwindi5 from "./bwindi/bwindi5.jpg";
 
 export {
   logo,
+  fact,
+  btn,
   h1,
   h2,
   h3,
