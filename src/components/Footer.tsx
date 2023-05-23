@@ -13,7 +13,7 @@ const Footer: FC<FooterProps> = ({}) => {
           <p>You've arrived at the end of this, </p>
           <h2>Enthralling Exploration</h2>
           <p className="w-[50%] max-mobile:w-full">
-            Goodbye and thank you for joining us on this journey to discover
+            Goodbye👋 and thank you for joining me on this journey to discover
             Africa. If you're interested in staying connected, feel free to
             connect with me via
             <a
@@ -59,7 +59,7 @@ const Footer: FC<FooterProps> = ({}) => {
       <Image
         src={p3}
         alt="header"
-        className="object-fit  h-full w-full duration-300 ease-out"
+        className="object-fit h-full max-mobile:h-[50px] w-full duration-300 ease-out"
       />
     </section>
   );
