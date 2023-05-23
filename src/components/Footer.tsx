@@ -1,5 +1,6 @@
 "use client";
 import { p1, p3, p4 } from "@/assets";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { FC } from "react";
 
@@ -7,9 +8,9 @@ interface FooterProps {}
 
 const Footer: FC<FooterProps> = ({}) => {
   return (
-    <section className="footer pt-20" id="end">
+    <motion.section className="footer pt-20" id="end">
       <div className="width h-[600px] relative  flex-col flex justify-center items-center text-center">
-        <div className="flex flex-col justify-center items-center ">
+        <motion.div className="flex flex-col justify-center items-center ">
           <p>You've arrived at the end of this, </p>
           <h2>Enthralling Exploration</h2>
           <p className="w-[50%] max-mobile:w-full">
@@ -43,7 +44,7 @@ const Footer: FC<FooterProps> = ({}) => {
             </a>
             .
           </p>
-        </div>
+        </motion.div>
         <Image
           src={p4}
           alt="header"
@@ -61,7 +62,7 @@ const Footer: FC<FooterProps> = ({}) => {
         alt="header"
         className="object-fit h-full max-mobile:h-[80px] w-full duration-300 ease-out"
       />
-    </section>
+    </motion.section>
   );
 };
 

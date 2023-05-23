@@ -1,26 +1,45 @@
 "use client";
+import { fadeIn, staggerContainer } from "@/animations";
 import { btn, h1, h2, h3, p4 } from "@/assets";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { FC } from "react";
+import { useInView } from "react-intersection-observer";
 
 interface HomeProps {}
 
 const Home: FC<HomeProps> = ({}) => {
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
   return (
-    <section className="home pt-[10rem]" id="">
+    <motion.section
+      className="home pt-[10rem]"
+      id=""
+      variants={staggerContainer(0.2, 0)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+    >
       <div className="width h-[500px]  max-mobile_lg:h-full max-tablet_lg:overflow-hidden ">
         <div className="flex items-center  max-mobile:flex-col ">
           <div className=" flex flex-col w-[80%] max-mobile:w-full gap-y-4">
             <div className="">
-              <h1>Discover</h1>
-              <h1>Africa🌍</h1>
+              <motion.h1 variants={fadeIn("right", "tween", 1.3, 1)}>
+                Discover
+              </motion.h1>
+              <motion.h1 variants={fadeIn("right", "tween", 1.3, 1)}>
+                Africa🌍
+              </motion.h1>
             </div>
-            <p>
+            <motion.p variants={fadeIn("right", "tween", 1.3, 1)}>
               Unlock the captivating allure of Africa and embark on a journey of
               breathtaking landscapes, vibrant cultures, and untamed adventures.
-            </p>
+            </motion.p>
 
-            <a
+            <motion.a
+              variants={fadeIn("right", "tween", 1.3, 1)}
               className="border-[2px] border-transparent hover:border-[#985A27]  relative h-[50px] flex items-center justify-center  w-[180px] group duration-300 ease-out mt-8"
               href="#places"
             >
@@ -37,39 +56,48 @@ const Home: FC<HomeProps> = ({}) => {
                   Explore
                 </span>
               </span>
-            </a>
+            </motion.a>
           </div>
           <div className="w-full max-mobile:mt-8">
-            <div className="flex gap-4 max-mobile:flex-col">
-              <Image
-                src={h2}
-                alt="Image 1"
-                className="  object-cover w-[300px] max-mobile_lg:w-[200px] max-tablet:w-[220px] max-tablet_lg:w-[250px]  h-auto max-mobile_lg:hidden  rounded-[10px]"
-              />
-              <div className="flex flex-col gap-4 ">
+            <div className="flex gap-4 max-mobile:flex-col w-full">
+              <motion.div className="w-full max-mobile:hidden">
                 <Image
-                  src={h1}
-                  alt="Image 2"
-                  className=" object-cover h-full w-full rounded-[10px]  max-mobile:h-[200px]"
+                  src={h2}
+                  alt="Image 1"
+                  className="object-fit w-max rounded-[10px] max-mobile:max-h-[240px] max-mobile_lg:max-h-[360px] max-tablet:max-h-[290px] max-tablet_lg:max-h-[340px]"
                 />
-                <div className="flex gap-4">
+              </motion.div>
+              <div className="flex flex-col gap-4 w-full">
+                <motion.div className=" w-full">
                   <Image
-                    src={p4}
+                    src={h1}
                     alt="Image 2"
-                    className="w-full h-auto max-mobile:w-[50px]  max-mobile:h-[50px]  max-tablet:w-[40px]"
+                    className=" object-fit h-full w-full rounded-[10px]  max-mobile:h-[200px]"
                   />
-                  <Image
-                    src={h3}
-                    alt="Image 3"
-                    className="w-full h-max  rounded-[10px] max-mobile:w-[300px]  max-mobile:h-[150px]"
-                  />
+                </motion.div>
+
+                <div className="flex gap-4">
+                  <motion.div className="">
+                    <Image
+                      src={p4}
+                      alt="Image 2"
+                      className="h-auto max-mobile:w-[50px]  max-mobile:h-[50px]  max-tablet:w-[40px]"
+                    />
+                  </motion.div>
+                  <motion.div className="w-full ">
+                    <Image
+                      src={h3}
+                      alt="Image 3"
+                      className="h-max  rounded-[10px] max-mobile:w-[300px]  max-mobile:h-[150px]"
+                    />
+                  </motion.div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

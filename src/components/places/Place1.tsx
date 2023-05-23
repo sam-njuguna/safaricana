@@ -1,5 +1,6 @@
 "use client";
 import { mara1, mara2, mara3, mara4, p3 } from "@/assets";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { FC } from "react";
 
@@ -7,7 +8,7 @@ interface Place1Props {}
 
 const Place1: FC<Place1Props> = ({}) => {
   return (
-    <div className="flex relative w-full h-[600px] max-mobile_lg:h-full mt-8">
+    <motion.div className="flex relative w-full h-[600px] max-mobile_lg:h-full mt-20 max-mobile:mt-8">
       <div className="flex w-full items-center  max-mobile_lg:hidden">
         <div className="w-full relative h-full">
           <div className="w-full flex items-end justify-end">
@@ -24,26 +25,32 @@ const Place1: FC<Place1Props> = ({}) => {
         </div>
         <div className="width flex items-center flex-row-reverse max-mobile_lg:flex-col gap-8 ">
           <div className="w-full flex justify-center items-center h-[400px] max-mobile_lg:h-full gap-4 max-mobile:gap-2">
-            <Image
-              src={mara1}
-              alt="Image 1"
-              className="object-contain h-[400px] w-max rounded-[10px] max-mobile:max-h-[240px] max-mobile_lg:max-h-[360px] max-tablet:max-h-[290px] max-tablet_lg:max-h-[340px]"
-            />
-            <div className="flex flex-col gap-4 max-mobile:gap-2">
+            <motion.div className="w-full">
               <Image
-                src={mara3}
+                src={mara1}
                 alt="Image 1"
-                className="object-contain h-max max-mobile:h-max max-mobile_lg:max-h-[170px] max-tablet_lg:max-h-[200px] w-max rounded-[10px]"
+                className="object-contain h-[400px] w-max rounded-[10px] max-mobile:max-h-[240px] max-mobile_lg:max-h-[360px] max-tablet:max-h-[290px] max-tablet_lg:max-h-[340px]"
               />
-              <Image
-                src={mara4}
-                alt="Image 1"
-                className="object-contain h-max max-mobile:h-max max-mobile_lg:max-h-[170px] max-tablet_lg:max-h-[200px]  w-max rounded-[10px]"
-              />
+            </motion.div>
+            <div className=" w-full flex flex-col gap-4 max-mobile:gap-2">
+              <motion.div className="w-full">
+                <Image
+                  src={mara3}
+                  alt="Image 1"
+                  className="object-contain h-max max-mobile:h-max max-mobile_lg:max-h-[170px] max-tablet_lg:max-h-[200px] w-max rounded-[10px]"
+                />
+              </motion.div>
+              <motion.div className="w-full">
+                <Image
+                  src={mara4}
+                  alt="Image 1"
+                  className="object-contain h-max max-mobile:h-max max-mobile_lg:max-h-[170px] max-tablet_lg:max-h-[200px]  w-max rounded-[10px]"
+                />
+              </motion.div>
             </div>
           </div>
-          <div className="w-full flex -mt-20 max-mobile_lg:mt-0">
-            <p>
+          <div className="w-full flex  max-mobile_lg:mt-0 overflow:hidden">
+            <motion.p>
               Masai Mara National Reserve in Kenya is a wildlife haven famous
               for its abundant wildlife and hosting the Great Migration.
               Visitors can witness river crossings, predator-prey interactions,
@@ -52,12 +59,11 @@ const Place1: FC<Place1Props> = ({}) => {
               and guided walks for excellent viewing. It is also home to the
               Maasai people, known for their vibrant culture and traditional way
               of life.
-            </p>
-            <div className="flex"></div>
+            </motion.p>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
