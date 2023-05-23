@@ -12,7 +12,7 @@
     @apply scroll-smooth outline-none list-none;
   }
   body {
-    @apply text-[16px] font-jost font-normal bg-bg text-text_g;
+    @apply text-[16px] max-mobile:text-[14px] font-jost font-normal bg-bg text-text_g;
   }
 }
 @layer components {

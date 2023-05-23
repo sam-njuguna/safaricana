@@ -22,7 +22,7 @@ const Place3: FC<Place1Props> = ({}) => {
             <Image
               src={mara1}
               alt="Image 1"
-              className="object-contain h-[400px] w-max rounded-[10px] max-mobile:h-[250px]"
+              className="object-contain h-[400px] w-max rounded-[10px] max-mobile:max-h-[240px] max-mobile_lg:max-h-[360px] max-tablet:max-h-[290px] max-tablet_lg:max-h-[340px]"
             />
             <div className="flex flex-col gap-4">
               <Image

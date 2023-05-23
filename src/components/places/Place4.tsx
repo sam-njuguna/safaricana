@@ -12,9 +12,9 @@ const Place4: FC<Place1Props> = ({}) => {
           <div className="w-full flex items-start justify-start">
             <Image src={py6} alt="Image 1" className=" h-[600px] w-max" />
           </div>
-          <div className="absolute top-0 bottom-0 left-0 h-full w-full bg-gradient-to-r from-[#070707] via-[#070707c5]"></div>
+          <div className="absolute top-0 bottom-0 left-0 h-full w-full bg-gradient-to-r from-[#070707]  via-[#070707c5] max-tablet_lg:to-[#070707c5]"></div>
         </div>
-        <div className="w-full "></div>
+        <div className="w-full max-tablet:w-[20%] max-tablet_lg:w-[40%]"></div>
       </div>
       <div className="absolute max-mobile_lg:relative w-full top-0 left-0 h-[600px] flex justify-center items-center flex-col  max-mobile_lg:h-full ">
         <div className="flex flex-col mb-8 gap-2 text-center ">
@@ -26,7 +26,7 @@ const Place4: FC<Place1Props> = ({}) => {
             <Image
               src={py7}
               alt="Image 1"
-              className="object-contain h-[400px] w-max rounded-[10px] max-mobile:max-h-[240px] max-mobile_lg:max-h-[350px]"
+              className="object-contain h-[400px] w-max rounded-[10px] max-mobile:max-h-[240px] max-mobile_lg:max-h-[360px] max-tablet:max-h-[290px] max-tablet_lg:max-h-[340px]"
             />
             <div className="flex flex-col gap-4 w-full max-mobile:gap-2">
               <Image

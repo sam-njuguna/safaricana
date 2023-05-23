@@ -1,5 +1,5 @@
 "use client";
-import { btn, h1, h2, h3, p1 } from "@/assets";
+import { btn, h1, h2, h3, p4 } from "@/assets";
 import Image from "next/image";
 import { FC } from "react";
 
@@ -8,18 +8,18 @@ interface HomeProps {}
 const Home: FC<HomeProps> = ({}) => {
   return (
     <section className="home pt-[10rem]" id="">
-      <div className="width h-[500px]  max-mobile_lg:h-full max-mobile_lg:overflow-hidden ">
+      <div className="width h-[500px]  max-mobile_lg:h-full max-tablet_lg:overflow-hidden ">
         <div className="flex items-center  max-mobile:flex-col ">
           <div className=" flex flex-col w-[80%] max-mobile:w-full gap-y-4">
             <div className="">
               <h1>Discover</h1>
-              <h1>Africa</h1>
+              <h1>Africa🌍</h1>
             </div>
             <p>
               Unlock the captivating allure of Africa and embark on a journey of
               breathtaking landscapes, vibrant cultures, and untamed adventures.
             </p>
-            {/* <button className="btn mt-8 w-max">Explore</button> */}
+
             <a
               className="border-[2px] border-transparent hover:border-[#985A27]  relative h-[50px] flex items-center justify-center  w-[180px] group duration-300 ease-out mt-8"
               href="#places"
@@ -44,7 +44,7 @@ const Home: FC<HomeProps> = ({}) => {
               <Image
                 src={h2}
                 alt="Image 1"
-                className="  object-cover w-[300px] max-mobile_lg:w-[200px] h-auto max-mobile_lg:hidden  rounded-[10px]"
+                className="  object-cover w-[300px] max-mobile_lg:w-[200px] max-tablet:w-[220px] max-tablet_lg:w-[250px]  h-auto max-mobile_lg:hidden  rounded-[10px]"
               />
               <div className="flex flex-col gap-4 ">
                 <Image
@@ -54,9 +54,9 @@ const Home: FC<HomeProps> = ({}) => {
                 />
                 <div className="flex gap-4">
                   <Image
-                    src={p1}
+                    src={p4}
                     alt="Image 2"
-                    className="w-full h-auto max-mobile:w-[50px]  max-mobile:h-[50px]"
+                    className="w-full h-auto max-mobile:w-[50px]  max-mobile:h-[50px]  max-tablet:w-[40px]"
                   />
                   <Image
                     src={h3}
