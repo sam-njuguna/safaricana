@@ -59,7 +59,7 @@ const Footer: FC<FooterProps> = ({}) => {
       <Image
         src={p3}
         alt="header"
-        className="object-fit h-full max-mobile:h-[50px] w-full duration-300 ease-out"
+        className="object-fit h-full max-mobile:h-[80px] w-full duration-300 ease-out"
       />
     </section>
   );
