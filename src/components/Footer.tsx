@@ -50,7 +50,7 @@ const Footer: FC<FooterProps> = ({}) => {
             </a>
             or
             <a
-              href="https://discord.com/channels/@samnj#1756"
+              href="https://discord.com/users/1038333075433721926"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text_c font-bold px-1 duration-300 ease-out hover:underline hover:text-text_t"
