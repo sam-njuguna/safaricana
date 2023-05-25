@@ -11,7 +11,7 @@ interface Place1Props {}
 const Place2: FC<Place1Props> = ({}) => {
   return (
     <motion.div
-      variants={staggerContainer(0.2, 0)}
+      variants={staggerContainer(0.1, 0)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
@@ -19,7 +19,7 @@ const Place2: FC<Place1Props> = ({}) => {
     >
       <div className="flex w-full items-center flex-row-reverse max-mobile_lg:hidden ">
         <motion.div
-          variants={fadeIn("left", "tween", 0.8, 0.8)}
+          variants={fadeIn("left", "tween", 0.6, 0.6)}
           className="w-full relative h-full"
         >
           <div className="w-full flex items-start justify-start">
@@ -31,7 +31,7 @@ const Place2: FC<Place1Props> = ({}) => {
       </div>
       <div className="absolute w-full top-0 left-0 h-[600px] z-20 flex justify-center items-center flex-col max-mobile_lg:relative  max-mobile_lg:h-full ">
         <motion.div
-          variants={slideIn("up", "tween", 0.9, 0.9)}
+          variants={slideIn("up", "tween", 0.7, 0.7)}
           className="flex flex-col text-center mb-8 gap-2 "
         >
           <p className="fc">Zambia/Zimbabwe</p>
@@ -40,7 +40,7 @@ const Place2: FC<Place1Props> = ({}) => {
         <div className="width flex items-center max-mobile_lg:flex-col gap-8">
           <div className="w-full flex h-[400px] justify-center flex-row-reverse items-center max-mobile_lg:h-full gap-4 max-mobile:gap-2">
             <motion.div
-              variants={fadeIn("left", "tween", 1, 1)}
+              variants={fadeIn("right", "tween", 0.8, 0.8)}
               className="w-full"
             >
               <Image
@@ -51,7 +51,7 @@ const Place2: FC<Place1Props> = ({}) => {
             </motion.div>
             <div className="w-full flex flex-col gap-4 max-mobile:gap-2">
               <motion.div
-                variants={fadeIn("left", "tween", 1.1, 1.1)}
+                variants={fadeIn("right", "tween", 0.9, 0.9)}
                 className="w-full"
               >
                 <Image
@@ -61,7 +61,7 @@ const Place2: FC<Place1Props> = ({}) => {
                 />
               </motion.div>
               <motion.div
-                variants={fadeIn("left", "tween", 1.2, 1.2)}
+                variants={fadeIn("right", "tween", 1, 1)}
                 className="w-full"
               >
                 <Image
@@ -73,7 +73,7 @@ const Place2: FC<Place1Props> = ({}) => {
             </div>
           </div>
           <div className="w-full flex   max-mobile_lg:mt-0">
-            <motion.p variants={fadeIn("up", "tween", 1.3, 1.3)}>
+            <motion.p variants={fadeIn("up", "tween", 1.1, 1.1)}>
               Victoria Falls is a massive waterfall on the Zambia-Zimbabwe
               border. Its the largest curtain of falling water worldwide, with a
               width of 1708 meters and a height of 108 meters. The falls power

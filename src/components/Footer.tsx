@@ -10,7 +10,7 @@ interface FooterProps {}
 const Footer: FC<FooterProps> = ({}) => {
   return (
     <motion.section
-      variants={staggerContainer(0.2, 0)}
+      variants={staggerContainer(0.1, 0)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
@@ -19,14 +19,14 @@ const Footer: FC<FooterProps> = ({}) => {
     >
       <div className="width h-[600px] relative  flex-col flex justify-center items-center text-center">
         <motion.div className="flex flex-col justify-center items-center ">
-          <motion.p variants={slideIn("up", "tween", 0.8, 0.8)}>
+          <motion.p variants={slideIn("up", "tween", 0.6, 0.6)}>
             You've arrived at the end of this,{" "}
           </motion.p>
-          <motion.h2 variants={slideIn("up", "tween", 0.9, 0.9)}>
+          <motion.h2 variants={slideIn("up", "tween", 0.7, 0.7)}>
             Enthralling Exploration
           </motion.h2>
           <motion.p
-            variants={slideIn("up", "tween", 1, 1)}
+            variants={slideIn("up", "tween", 0.8, 0.8)}
             className="w-[50%] max-mobile:w-full"
           >
             Goodbye👋 and thank you for joining me on this journey to discover
@@ -60,16 +60,27 @@ const Footer: FC<FooterProps> = ({}) => {
             .
           </motion.p>
         </motion.div>
-        <Image
-          src={p4}
-          alt="header"
-          className="object-fit absolute top-0 left-0 h-[80px]  w-max duration-300 ease-out"
-        />
-        <Image
-          src={p1}
-          alt="header"
-          className="object-fit absolute bottom-0 right-0 h-[100px] max-mobile:h-[40px]  w-max duration-300 ease-out"
-        />
+        <motion.div
+          variants={slideIn("left", "tween", 0.9, 0.9)}
+          className="absolute top-0 left-0 "
+        >
+          <Image
+            src={p4}
+            alt="header"
+            className="object-fit h-[80px]  w-max duration-300 "
+          />
+        </motion.div>
+
+        <motion.div
+          variants={slideIn("right", "tween", 1, 1)}
+          className="absolute bottom-0 right-0 "
+        >
+          <Image
+            src={p1}
+            alt="header"
+            className="object-fit h-[100px] max-mobile:h-[40px]  w-max"
+          />
+        </motion.div>
       </div>
 
       <Image

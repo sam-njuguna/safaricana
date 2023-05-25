@@ -17,7 +17,7 @@ const Place4: FC<Place1Props> = ({}) => {
     >
       <div className="flex w-full items-baseline flex-row-reverse max-mobile_lg:hidden ">
         <motion.div
-          variants={fadeIn("left", "tween", 0.8, 0.8)}
+          variants={fadeIn("left", "tween", 0.6, 0.6)}
           className="w-full relative h-full"
         >
           <div className="w-full flex items-start justify-start">
@@ -29,7 +29,7 @@ const Place4: FC<Place1Props> = ({}) => {
       </div>
       <div className="absolute max-mobile_lg:relative w-full top-0 left-0 h-[600px] flex justify-center items-center flex-col  max-mobile_lg:h-full ">
         <motion.div
-          variants={slideIn("up", "tween", 0.9, 0.9)}
+          variants={slideIn("up", "tween", 0.7, 0.7)}
           className="flex flex-col mb-8 gap-2 text-center "
         >
           <p className="fc">Egypt</p>
@@ -38,7 +38,7 @@ const Place4: FC<Place1Props> = ({}) => {
         <div className="width flex items-center max-mobile_lg:flex-col  gap-8">
           <div className="w-full flex h-[400px] justify-center items-center flex-row-reverse max-mobile_lg:h-full gap-4 max-mobile:gap-2">
             <motion.div
-              variants={fadeIn("left", "tween", 1, 1)}
+              variants={fadeIn("right", "tween", 0.8, 0.8)}
               className="w-full"
             >
               <Image
@@ -49,7 +49,7 @@ const Place4: FC<Place1Props> = ({}) => {
             </motion.div>
             <div className=" flex flex-col gap-4 w-full max-mobile:gap-2">
               <motion.div
-                variants={fadeIn("left", "tween", 1.1, 1.1)}
+                variants={fadeIn("right", "tween", 0.9, 0.9)}
                 className="w-full"
               >
                 <Image
@@ -59,7 +59,7 @@ const Place4: FC<Place1Props> = ({}) => {
                 />
               </motion.div>
               <motion.div
-                variants={fadeIn("left", "tween", 1.2, 1.2)}
+                variants={fadeIn("right", "tween", 1, 1)}
                 className="w-full"
               >
                 <Image
@@ -71,7 +71,7 @@ const Place4: FC<Place1Props> = ({}) => {
             </div>
           </div>
           <div className="w-full flex  -mt-20 max-mobile_lg:mt-0">
-            <motion.p variants={fadeIn("up", "tween", 1.3, 1.3)}>
+            <motion.p variants={fadeIn("up", "tween", 1.1, 1.1)}>
               The Pyramids of Giza, a UNESCO World Heritage Site and one of the
               Seven Wonders of the Ancient World, are ancient tombs near Cairo.
               The Great Pyramid of Khufu, the largest ever built, is the most
