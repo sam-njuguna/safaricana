@@ -24,7 +24,7 @@ const Place1: FC<Place1Props> = ({}) => {
           <div className="w-full flex items-end justify-end">
             <Image src={mara2} alt="Image 1" className=" h-[600px] w-max" />
           </div>
-          <div className="absolute top-0 bottom-0 -right-2 h-full w-full bg-gradient-to-l from-[#070707]  via-[#070707c5] max-tablet_lg:to-[#070707c5]"></div>
+          <div className="absolute top-0 bottom-0 right-0 h-full w-full bg-gradient-to-l from-[#070707]  via-[#070707c5] max-tablet_lg:to-[#070707c5]"></div>
         </motion.div>
         <div className="w-full max-tablet:w-[20%]"></div>
       </div>

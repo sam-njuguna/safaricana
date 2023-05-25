@@ -18,7 +18,7 @@ interface PlacesProps {}
 const Places: FC<PlacesProps> = ({}) => {
   return (
     <motion.section
-      className="places pt-[5rem] pb-[5rem] all-width overflow-hidden "
+      className="places pt-[5rem] pb-[5rem] all-width  "
       id="places"
       variants={staggerContainer(0.2, 0)}
       initial="hidden"
