@@ -14,7 +14,7 @@ const Facts: FC<FactsProps> = ({}) => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="facts pt-20"
+      className="facts pt-20 overflow-hidden"
       id="facts"
     >
       <div className="width">
