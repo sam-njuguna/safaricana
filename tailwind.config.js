@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        x_mobile: "350px",
         mobile: "450px",
         mobile_lg: "765px",
         tablet: "990px",

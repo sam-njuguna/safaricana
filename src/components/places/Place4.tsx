@@ -44,7 +44,7 @@ const Place4: FC<Place1Props> = ({}) => {
               <Image
                 src={py7}
                 alt="Image 1"
-                className="object-contain h-[340px] w-max rounded-[10px] max-mobile:max-h-[200px] max-mobile_lg:max-h-[340px] max-tablet:max-h-[290px] max-tablet_lg:max-h-[340px]"
+                className="object-contain h-[340px] w-max rounded-[10px] max-mobile:max-h-[200px] max-x_mobile:max-h-[160px] max-mobile_lg:max-h-[340px] max-tablet:max-h-[290px] max-tablet_lg:max-h-[340px]"
               />
             </motion.div>
             <div className=" flex flex-col gap-4 w-full max-mobile:gap-2">
