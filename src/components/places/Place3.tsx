@@ -45,7 +45,7 @@ const Place1: FC<Place1Props> = ({}) => {
               <Image
                 src={mara1}
                 alt="Image 1"
-                className="object-contain h-[400px] w-max rounded-[10px] max-mobile:max-h-[230px] max-x_mobile:max-h-[170px] max-mobile_lg:max-h-[360px] max-tablet:max-h-[260px] max-tablet_lg:max-h-[340px]"
+                className="object-contain h-[400px] w-max rounded-[10px] max-mobile:max-h-[220px] max-x_mobile:max-h-[170px] max-mobile_lg:max-h-[360px] max-tablet:max-h-[260px] max-tablet_lg:max-h-[340px]"
               />
             </motion.div>
             <div className=" w-full flex flex-col gap-4 max-mobile:gap-2">
