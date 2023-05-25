@@ -41,6 +41,6 @@
     @apply py-3 px-12 bg-bg_btn_var duration-200 font-bold  ease-out hover:bg-bg_btn  text-text_c;
   }
   .width {
-    @apply max-w-[1200px] m-auto px-10 max-mobile:px-6 max-tablet:px-8 max-laptop:px-12 overflow-hidden;
+    @apply max-w-[1200px] m-auto px-10 max-mobile:px-6 max-tablet:px-8 max-laptop:px-12;
   }
 }

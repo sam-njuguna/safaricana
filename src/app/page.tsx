@@ -5,13 +5,13 @@ interface pageProps {}
 
 const page: FC<pageProps> = ({}) => {
   return (
-    <>
+    <div className="overflow-hidden">
       <Navbar />
       <Home />
       <Places />
       <Facts />
       <Footer />
-    </>
+    </div>
   );
 };
 
