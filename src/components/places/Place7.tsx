@@ -47,7 +47,7 @@ const Place7: FC<Place1Props> = ({}) => {
               <Image
                 src={soss2}
                 alt="Image 1"
-                className="object-contain h-[380px] w-max rounded-[10px] max-mobile:max-h-[230px] max-x_mobile:max-h-[170px] max-mobile_lg:max-h-[360px] max-tablet:max-h-[290px] max-tablet_lg:max-h-[340px]"
+                className="object-contain h-[380px] w-max rounded-[10px] max-mobile:max-h-[230px] max-x_mobile:max-h-[170px] max-mobile_lg:max-h-[360px] max-tablet:max-h-[260px] max-tablet_lg:max-h-[340px]"
               />
             </motion.div>
             <div className="flex w-full flex-col gap-4 max-mobile:gap-2">
