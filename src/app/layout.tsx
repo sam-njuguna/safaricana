@@ -1,7 +1,7 @@
 import "./globals.css";
 export const metadata = {
   title: "Safaricana",
-  description: "| Discover Africa",
+  description: "| Discover Africa.",
 };
 
 export default function RootLayout({
