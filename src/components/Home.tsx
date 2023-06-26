@@ -19,7 +19,7 @@ const Home: FC<HomeProps> = ({}) => {
       viewport={{ once: false, amount: 0.25 }}
     >
       <div className="width h-[500px]  max-mobile_lg:h-full max-tablet_lg:overflow-hidden ">
-        <div className="flex items-center max-mobile_l:flex-col">
+        <div className="flex items-center gap-8 max-mobile_l:flex-col">
           <div className=" flex flex-col w-[80%] max-mobile_l:w-full gap-y-4">
             <div className="">
               <motion.h1 variants={slideIn("left", "tween", 0.7, 0.7)}>
@@ -54,7 +54,7 @@ const Home: FC<HomeProps> = ({}) => {
               </span>
             </motion.a>
           </div>
-          <div className="w-full max-mobile_l:mt-8">
+          <div className="w-full max-mobile_l:mt-4">
             <div className="flex gap-4 max-mobile:flex-col w-full">
               <motion.div
                 variants={fadeIn("right", "tween", 1, 1)}
