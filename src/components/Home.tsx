@@ -69,7 +69,7 @@ const Home: FC<HomeProps> = ({}) => {
               <div className="flex flex-col gap-4 w-full">
                 <motion.div
                   variants={fadeIn("right", "tween", 1.1, 1.1)}
-                  className=" w-full max-h-[200px] max-mobile:max-h-[200px] max-mobile_l:max-h-[300px] rounded-[10px] overflow-hidden"
+                  className=" w-full max-h-[200px] max-mobile:max-h-[200px] max-mobile_l:max-h-[250px] rounded-[10px] overflow-hidden"
                 >
                   <Image
                     src={h1}
@@ -87,7 +87,7 @@ const Home: FC<HomeProps> = ({}) => {
                   </motion.div>
                   <motion.div
                     variants={fadeIn("right", "tween", 1.3, 1.3)}
-                    className=" w-full max-h-[200px] max-mobile:max-h-[200px]  max-mobile_l:max-h-[300px]  rounded-[10px] overflow-hidden"
+                    className=" w-full max-h-[200px] max-mobile:max-h-[200px]  max-mobile_l:max-h-[250px]  rounded-[10px] overflow-hidden"
                   >
                     <Image
                       src={h3}
