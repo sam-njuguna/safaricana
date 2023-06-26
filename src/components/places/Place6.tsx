@@ -36,37 +36,25 @@ const Place6: FC<Place1Props> = ({}) => {
           <h3>Marrakech.</h3>
         </motion.div>
         <div className="width flex items-center max-mobile_lg:flex-col  gap-8">
-          <div className="w-full flex h-[400px] justify-center items-center max-mobile_lg:h-full flex-row-reverse gap-4 max-mobile:gap-2">
+          <div className="w-full flex justify-center items-center  gap-4 max-mobile:gap-2">
             <motion.div
               variants={fadeIn("right", "tween", 0.8, 0.8)}
-              className="w-full"
+              className="w-full max-h-[400px] rounded-[10px] overflow-hidden"
             >
-              <Image
-                src={marr3}
-                alt="Image 1"
-                className="object-contain h-[380px] w-max rounded-[10px] max-mobile:max-h-[220px] max-x_mobile:max-h-[170px] max-mobile_lg:max-h-[320px] max-tablet:max-h-[260px] max-tablet_lg:max-h-[340px]"
-              />
+              <Image src={marr3} alt="Image 1" />
             </motion.div>
             <div className="flex w-full flex-col gap-4 max-mobile:gap-2">
               <motion.div
                 variants={fadeIn("right", "tween", 0.9, 0.9)}
-                className="w-full"
+                className="w-full max-h-[200px] rounded-[10px] overflow-hidden"
               >
-                <Image
-                  src={marr2}
-                  alt="Image 1"
-                  className="object-contain h-max max-mobile:h-max max-mobile_lg:max-h-[170px] w-max rounded-[10px]"
-                />
+                <Image src={marr2} alt="Image 1" className="w-full h-full" />
               </motion.div>
               <motion.div
                 variants={fadeIn("right", "tween", 1.1, 1.1)}
-                className="w-full"
+                className="w-full max-h-[200px] rounded-[10px] overflow-hidden"
               >
-                <Image
-                  src={marr4}
-                  alt="Image 1"
-                  className="object-contain h-max max-mobile:h-max max-mobile_lg:max-h-[170px] w-max rounded-[10px]"
-                />
+                <Image src={marr4} alt="Image 1" className="w-full h-full" />
               </motion.div>
             </div>
           </div>

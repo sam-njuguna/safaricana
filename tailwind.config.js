@@ -10,6 +10,7 @@ module.exports = {
       screens: {
         x_mobile: "350px",
         mobile: "450px",
+        mobile_l: "650px",
         mobile_lg: "765px",
         tablet: "990px",
         tablet_lg: "1150px",

@@ -19,7 +19,7 @@ const Home: FC<HomeProps> = ({}) => {
       viewport={{ once: false, amount: 0.25 }}
     >
       <div className="width h-[500px]  max-mobile_lg:h-full max-tablet_lg:overflow-hidden ">
-        <div className="flex items-center  max-mobile:flex-col ">
+        <div className="flex items-center max-mobile_l:flex-col">
           <div className=" flex flex-col w-[80%] max-mobile:w-full gap-y-4">
             <div className="">
               <motion.h1 variants={slideIn("left", "tween", 0.7, 0.7)}>
@@ -54,49 +54,45 @@ const Home: FC<HomeProps> = ({}) => {
               </span>
             </motion.a>
           </div>
-          <div className="w-full max-mobile:mt-8">
+          <div className="w-full max-mobile_l:mt-8">
             <div className="flex gap-4 max-mobile:flex-col w-full">
               <motion.div
                 variants={fadeIn("right", "tween", 1, 1)}
-                className="w-full max-mobile:hidden"
+                className="w-full max-h-[400px] rounded-[10px] overflow-hidden  max-mobile_l:hidden"
               >
                 <Image
                   src={h2}
                   alt="Image 1"
-                  className="object-fit w-max rounded-[10px] max-mobile:max-h-[240px] max-mobile_lg:max-h-[360px] max-tablet:max-h-[290px] max-tablet_lg:max-h-[340px]"
+                  className="w-full h-full object-cover"
                 />
               </motion.div>
               <div className="flex flex-col gap-4 w-full">
                 <motion.div
                   variants={fadeIn("right", "tween", 1.1, 1.1)}
-                  className=" w-full"
+                  className=" w-full max-h-[200px] max-mobile:max-h-[200px] max-mobile_l:max-h-[300px] rounded-[10px] overflow-hidden"
                 >
                   <Image
                     src={h1}
                     alt="Image 2"
-                    className=" object-fit h-full w-full rounded-[10px]  max-mobile:h-[200px]"
+                    className="w-full h-full  object-cover"
                   />
                 </motion.div>
 
                 <div className="flex gap-4">
                   <motion.div
                     variants={fadeIn("right", "tween", 1.2, 1.2)}
-                    className=""
+                    className=" max-w-[100px]"
                   >
-                    <Image
-                      src={p4}
-                      alt="Image 2"
-                      className="h-auto max-mobile:w-[50px]  max-mobile:h-[50px]  max-tablet:w-[40px]"
-                    />
+                    <Image src={p4} alt="Image 2" className="h-auto w-full" />
                   </motion.div>
                   <motion.div
                     variants={fadeIn("right", "tween", 1.3, 1.3)}
-                    className="w-full "
+                    className=" w-full max-h-[200px] max-mobile:max-h-[200px]  max-mobile_l:max-h-[300px]  rounded-[10px] overflow-hidden"
                   >
                     <Image
                       src={h3}
                       alt="Image 3"
-                      className="h-max  rounded-[10px] max-mobile:w-[300px]  max-mobile:h-[150px]"
+                      className="w-full h-full  object-cover"
                     />
                   </motion.div>
                 </div>

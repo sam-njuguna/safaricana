@@ -38,37 +38,25 @@ const Place2: FC<Place1Props> = ({}) => {
           <h3>Victoria Falls</h3>
         </motion.div>
         <div className="width flex items-center max-mobile_lg:flex-col gap-8">
-          <div className="w-full flex h-[400px] justify-center flex-row-reverse items-center max-mobile_lg:h-full gap-4 max-mobile:gap-2">
+          <div className="w-full flex justify-center items-center  gap-4 max-mobile:gap-2">
             <motion.div
               variants={fadeIn("right", "tween", 0.8, 0.8)}
-              className="w-full"
+              className="w-full max-h-[400px] rounded-[10px] overflow-hidden"
             >
-              <Image
-                src={vic1}
-                alt="Image 1"
-                className="object-contain h-[380px] w-max rounded-[10px] max-mobile:max-h-[220px] max-x_mobile:max-h-[170px] max-mobile_lg:max-h-[320px] max-tablet:max-h-[260px] max-tablet_lg:max-h-[340px]"
-              />
+              <Image src={vic1} alt="Image 1" className="w-full h-full" />
             </motion.div>
             <div className="w-full flex flex-col gap-4 max-mobile:gap-2">
               <motion.div
                 variants={fadeIn("right", "tween", 0.9, 0.9)}
-                className="w-full"
+                className="w-full max-h-[200px] rounded-[10px] overflow-hidden"
               >
-                <Image
-                  src={vic4}
-                  alt="Image 1"
-                  className="object-contain h-max max-mobile:h-max max-mobile_lg:max-h-[170px] w-max rounded-[10px]"
-                />
+                <Image src={vic4} alt="Image 1" className="w-full  h-full  " />
               </motion.div>
               <motion.div
                 variants={fadeIn("right", "tween", 1, 1)}
-                className="w-full"
+                className="w-full max-h-[200px] rounded-[10px] overflow-hidden"
               >
-                <Image
-                  src={vic3}
-                  alt="Image 1"
-                  className="object-contain h-max max-mobile:h-max max-mobile_lg:max-h-[170px] w-max rounded-[10px]"
-                />
+                <Image src={vic3} alt="Image 1" className=" h-full w-full " />
               </motion.div>
             </div>
           </div>
