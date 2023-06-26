@@ -20,7 +20,7 @@ const Home: FC<HomeProps> = ({}) => {
     >
       <div className="width h-[500px]  max-mobile_lg:h-full max-tablet_lg:overflow-hidden ">
         <div className="flex items-center max-mobile_l:flex-col">
-          <div className=" flex flex-col w-[80%] max-mobile:w-full gap-y-4">
+          <div className=" flex flex-col w-[80%] max-mobile_l:w-full gap-y-4">
             <div className="">
               <motion.h1 variants={slideIn("left", "tween", 0.7, 0.7)}>
                 Discover
